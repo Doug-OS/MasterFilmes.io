@@ -1,0 +1,246 @@
+
+body{
+    background-color: rgb(79, 136, 46);
+    
+}
+/*---------------Logo-----------------*/
+.logo{
+    max-height: 50px;
+    max-width: 50px;
+    left: 50px;
+}
+/*---------------Logo fim-----------------*/
+.header{
+    background-color: rgba(0, 0, 0, 1);
+
+}
+.menu a{
+    color: seashell;
+}
+
+/*--------------------Row da parte lançamentos---------------------*/
+.Lançamentos{
+    background-color: rgba(14, 13, 13, 0.8);
+    color: white;
+}
+.Texto-Lançamento{
+    padding-top: 20px;
+    text-align: center;
+}
+.bloco-lançamento{
+    padding-bottom: 20px;
+    height: 480px;
+}
+
+
+
+/*video lado direito*/
+.trailer{
+    position: relative;
+    overflow: hidden;
+    width: 52%;
+    height: 90%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    float: left;
+}
+.trailer iframe{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 90%;
+}
+
+/*texto lado esquerdo*/
+.descrição{
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    height: 90%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    float: right;
+    font-size: 80%;
+}
+.texto-em-linha{/*diretor roteiro estreia*/
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/*----------------Row da parte lançamentos Fim-------------------*/
+
+
+/*--------------------Row da parte destaque---------------------*/
+.EmDestaque{
+    background-color: white;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.EmDestaque .cartaz{
+    height: 100%;
+    width: 100%;
+}
+
+.EmDestaque h1{
+    float: left;
+}
+
+.EmDestaque img{
+    align-items: center;
+    max-width: 200px;
+    min-height: 5px;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.EmDestaque .dropdown{
+    float: right;
+    top: -40px;
+    
+}
+
+/*----------------Row da parte destaque Fim-------------------*/
+
+/*--------------------Row da parte UltimasAvalicoes---------------------*/
+.UltimasAvalicoes{   
+    background-color: white; 
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    
+}
+.UltimasAvalicoes img{
+    max-width: 20%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 250px;
+    float: left;
+}
+.UltimasAvalicoes p{
+    text-align: justify;
+}
+
+
+
+/*----------------Row da parte UltimasAvalicoes Fim-------------------*/
+
+/*----------------Row da parte Emtrevista&MakingOf Inicio-------------------*/
+.EntrevistasMakingof{
+    background-color: rgba(1, 1, 1, 0.8);
+    color: white;
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    height: 100%;
+}
+.Makingof{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.EntrevistasMakingof iframe{
+    position: absolute;
+    width: 90%;
+    height: 40%;
+
+}
+.EntrevistasMakingof .texto{
+    padding-top: 60%;
+    font-size: 50%;
+    padding-bottom: 40px;
+}
+.EntrevistasMakingof h2{
+    padding-bottom: 3%;
+}
+
+/*----------------Row da parte Emtrevista&MakingOf Fim-------------------*/
+
+/*----------------Row ConsideraçãoFinal Inicio-------------------*/
+.ConsideraçãoFinal{
+    background-color: white; 
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ConsideraçãoFinal .novidades img{
+    max-width: 30%;
+    min-width: 30%;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+.fotoEditorial{
+    max-width: 10%;
+    min-width: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.textoEditorial{
+    padding-bottom: 5px;
+}
+/*----------------Row ConsideraçãoFinalFim-------------------*/
+
+/*----------------Roda pé Inicio-------------------*/
+footer{
+    background-color: rgba(0, 0, 0, 1);
+    color: whitesmoke;
+    text-align: center;
+}
+/*----------------Roda pé Fim-------------------*/
+
+/*----------------Stars-------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:22px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
