@@ -1,8 +1,9 @@
 
+
 body{
+    background-color: rgb(241, 241, 241);
     background-image: url(https://www.dashcontroles.com.br/wp-content/uploads/2018/06/wallpaper-gamer.jpg);
     
-}
 }
 /*---------------Logo-----------------*/
 .logo{
@@ -81,6 +82,8 @@ body{
     background-color: white;
     padding-top: 5%;
     padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .EmDestaque .cartaz{
@@ -88,8 +91,8 @@ body{
     width: 100%;
 }
 
-.EmDestaque h1{
-    float: left;
+.EmDestaque h2{
+    display: inline;
 }
 
 .EmDestaque img{
@@ -102,7 +105,7 @@ body{
 }
 
 .EmDestaque .dropdown{
-    float: right;
+    margin-right: 50%;
     top: -40px;
     
 }
@@ -242,6 +245,10 @@ footer{
     color: #c59b08;
 }
 
-
-
+body{ 
+    overflow-x: hidden;
+}
+.scroll{
+    overflow-x: hidden;
+}
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
